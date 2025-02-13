@@ -1,23 +1,35 @@
-/* General Styling */
-body {
-    font-family: Arial, sans-serif;
+/* Reset Default Styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    text-align: center;
+    box-sizing: border-box;
 }
 
-/* Header Styling */
-header {
-    background-color: #333;
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #649ae2; /* Light Blue Background */
     color: white;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Name Styling */
-h1.Name {
-    margin: 0;
-    font-size: 2.5rem;
+
+/* Header */
+header {
+    background-color: #333; /* Dark gray */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    width: 100%;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 /* Navigation Bar */
@@ -28,13 +40,48 @@ h1.Name {
     margin-top: 15px;
 }
 
-.Nav h1 {
+.Nav a {
+    text-decoration: none;
+    color: white; /* Ensures links are always white */
+    margin-left: 20px;
     font-size: 1.2rem;
-    cursor: pointer;
-    color: white;
     transition: color 0.3s;
 }
 
-.Nav h1:hover {
+.Nav a:hover {
     color: #ffcc00;
+}
+
+/* Fix for Visited Links */
+.Nav a:visited {
+    color: white !important; /* Ensures visited links stay white */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333; /* Dark footer */
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Social Media Icons */
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between icons */
+}
+
+/* Adjusting the icon size */
+.socials img {
+    width: 40px; /* Resize icons */
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.socials img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
 }
