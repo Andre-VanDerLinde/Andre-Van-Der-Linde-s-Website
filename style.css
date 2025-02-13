@@ -15,7 +15,6 @@ body {
     min-height: 100vh;
 }
 
-
 /* Header */
 header {
     background-color: #333; /* Dark gray */
@@ -55,6 +54,57 @@ header {
 /* Fix for Visited Links */
 .Nav a:visited {
     color: white !important; /* Ensures visited links stay white */
+}
+
+/* Main Content Layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 5%;
+    min-height: 80vh;
+    width: 100%;
+}
+
+/* Centered Content */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #002b80; /* Dark Blue */
+    padding: 50px;
+    border-radius: 15px;
+    width: 95%; /* Increased width for better fit */
+    max-width: 1400px; /* Ensures it doesn't get too large on wide screens */
+    color: white;
+}
+
+/* Text Content */
+.text-content {
+    flex: 1;
+    padding-right: 40px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Profile Image */
+.image-container {
+    flex-shrink: 0;
+}
+
+.image-container img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Quote Section */
+.quote {
+    flex: 1;
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: right;
+    padding-left: 40px;
 }
 
 /* Footer Styling */
