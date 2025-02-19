@@ -19,8 +19,33 @@
     </header>
     
     <!-- Main Section -->
-    <main>
+    <main class = "container">
+        <!-- Left Sidebar -->
+        <div class="sidebar"></div> 
         
+        <h1 class="ContactMe">Contact Me:</h1>
+        
+        <div class="formItem">
+            <form action="./success.html">
+                <div class="formItem">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Name">
+                </div>
+                <div class="formItem">
+                    <label for="email">Email:</label>
+                    <input type="email" name="emai" id="email" placeholder="Enter Email">
+                </div>
+                <div class="formItem">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="50" rows="10" placeholder="Type Message"></textarea>
+                </div>
+                
+                <input class="Submit" id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+        
+        <!-- Right Sidebar -->
+        <div class="sidebar"></div> 
     </main>
 
     <!-- Footer Section -->
