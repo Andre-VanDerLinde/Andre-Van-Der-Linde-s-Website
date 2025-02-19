@@ -166,7 +166,7 @@ footer {
 
 /* Reverse Section for Alternating Layout */
 .hobby-section.reverse {
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 /* Hobby Text */
@@ -195,8 +195,8 @@ footer {
 
 /* Portfolio Page Container */
 .portfolio-container {
-    background-color: #649ae2; /* Light Blue Background */
-    color: white;
+    background-color: #649ae2; 
+    color: white; /* Light Blue Background */
     padding: 50px 10%;
     text-align: left;
 }
